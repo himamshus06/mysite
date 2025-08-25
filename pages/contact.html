@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../style.css" />
+  
+  <title>Contact Form</title>
+</head>
+<body >
+
+    <header>
+         <nav>
+            <a href="../index.html" style="color: black;font-weight: bold;"><h3>Home</h3></a>
+            <ul>
+               <li><a href="../pages/about.html" >About Me</a></li>
+                <li><a href="../pages/projects.html">Projects</a></li>
+                <li><a href="../pages/services.html">Services</a></li>
+                <li><a href="../pages/contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+  <section class="text-gray-600 body-font relative">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-col text-center w-full mb-12">
+      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Contact Me</h1>
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Feel free to reach out to me anytime!</p>
+    </div>
+    <div class="lg:w-1/2 md:w-2/3 mx-auto">
+      <!-- ✅ Start Form -->
+      <form action="https://formsubmit.co/YOUR_EMAIL" method="POST" class="flex flex-wrap -m-2">
+        
+        <!-- Name -->
+        <div class="p-2 w-1/2">
+          <div class="relative">
+            <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
+            <input type="text" id="name" name="name" required
+              class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+          </div>
+        </div>
+        
+        <!-- Email -->
+        <div class="p-2 w-1/2">
+          <div class="relative">
+            <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+            <input type="email" id="email" name="email" required
+              class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+          </div>
+        </div>
+        
+        <!-- Message -->
+        <div class="p-2 w-full">
+          <div class="relative">
+            <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
+            <textarea id="message" name="message" required
+              class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+          </div>
+        </div>
+        
+        <!-- Hidden Inputs -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+
+        <!-- Submit Button -->
+        <div class="p-2 w-full">
+          <button type="submit"
+            class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+            Send Message
+          </button>
+        </div>
+      </form>
+      <!-- ✅ End Form -->
+
+     
+    </div>
+  </div>
+</section>
+
+<script src="https://kit.fontawesome.com/44bdc731e1.js" crossorigin="anonymous"></script>
+
+<nav  style="max-width: fit-content; margin: auto;font-size: 1.5rem;">
+    <ul>
+        <li><a href="https://www.instagram.com/himamshus06" target="0"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="https://github.com/himamshus06" target="0"><i class="fa-brands fa-github"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/himamshu-s-886b35301/" target="0"><i class="fa-brands fa-linkedin"></i></a></li>
+    </ul>
+</nav>
+<footer>
+        <p>&copy; 2025 Himamshu S. All rights reserved.</p>
+    </footer>
+</body>
+</html>
