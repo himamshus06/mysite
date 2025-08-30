@@ -3,39 +3,352 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Himamshu S | Speaker, Developer, Filmmaker</title>
-    <meta name="description" content="Himamshu S is a speaker, developer, and filmmaker. Explore his projects, services, and films on his personal website.">
-    <link rel="shortcut icon" href="assets/favion.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    
+    <title>Himamshu S - Speaker, Developer & Filmmaker</title>
+    <meta name="description" content="Professional portfolio showcasing expertise in public speaking, software development, and filmmaking">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 <body>
-    <header>
-       
-        <nav  style="justify-content: center;">
-            <ul>
-                <li><a href="pages/about.html">About Me</a></li>
-                <li><a href="pages/projects.html">Projects</a></li>
-                <li><a href="pages/services.html">Services</a></li>
-                <li><a href="pages/contact.html">Contact</a></li>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Portfolio</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#speaking" class="nav-link">Speaking</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#development" class="nav-link">Development</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#filmmaking" class="nav-link">Filmmaking</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
             </ul>
-        </nav>
-    </header>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
 
-     <div class="intro">
-        <div>
-        <h1 style="font-size: 50px;">Himamshu S</h1>
-        <p>Speaker, Developer, Filmmaker.</p>
-     </div>
-     <div>
-        <img src="assets/image.png" alt="" srcset="" class="image">
-     </div>
-     </div>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="highlight">Speaker</span> • 
+                    <span class="highlight">Developer</span> • 
+                    <span class="highlight">Filmmaker</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Crafting compelling narratives through code, camera, and conversation
+                </p>
+                <div class="hero-buttons">
+                    <a href="#about" class="btn btn-primary">Learn More</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-image-placeholder">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I am a Speaker, Developer, Filmmaker. I am a passionate and a quick learner and take immense pleasure in learning new things, acquiring various skills and exposing myself to challenges. As an empath and a leader, I rejoice in growing along with my peers. Soft skills is where I shine while hard skills is where I am resourceful and consolidating.
+                    </p>
+                    <p>
+                        My unique combination of skills allows me to approach challenges from multiple perspectives, 
+                        creating solutions that are both technically sound and human-centered.
+                    </p>
+                    <div class="skills">
+                        <div class="skill-category">
+                            <h3>Speaking</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Public Speaking</span>
+                                <span class="skill-tag">Workshops</span>
+                                <span class="skill-tag">Seminars</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Development</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Websites</span>
+                                <span class="skill-tag">Progressive Web Apps</span>
+                                <span class="skill-tag">Android Apps</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Filmmaking</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Documentary</span>
+                                <span class="skill-tag">Short Films</span>
+                                <span class="skill-tag">Editing</span>
+                                <span class="skill-tag">Storytelling</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <footer>
-        <p>&copy; 2025 Himamshu S. All rights reserved.</p>
+    <!-- Speaking Section -->
+    <section id="speaking" class="speaking">
+        <div class="container">
+            <h2 class="section-title">Speaking & Presentations</h2>
+            <div class="speaking-grid">
+                <div class="speaking-card">
+                    <div class="speaking-icon">
+                        <i class="fas fa-microphone"></i>
+                    </div>
+                    <h3>Event Hosts</h3>
+                    <p>MC for various eventss including talks, seminars, workshops, college events, etc.</p>
+                    <div class="speaking-topics">
+                        <span class="topic">Speaking</span>
+                        <span class="topic">Hosting</span>
+                        <span class="topic">MC</span>
+                    </div>
+                </div>
+                <div class="speaking-card">
+                    <div class="speaking-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3>Workshops & Training</h3>
+                    <p>Interactive workshops teaching practical skills in development and public speaking.</p>
+                    <div class="speaking-topics">
+                        <span class="topic">Skill Development</span>
+                        <span class="topic">Hands-on Learning</span>
+                        <span class="topic">Best Practices</span>
+                    </div>
+                </div>
+                <div class="speaking-card">
+                    <div class="speaking-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Corporate Events</h3>
+                    <p>Engaging presentations for corporate audiences on technology adoption and digital innovation.</p>
+                    <div class="speaking-topics">
+                        <span class="topic">Business Strategy</span>
+                        <span class="topic">Team Building</span>
+                        <span class="topic">Leadership</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Development Section -->
+    <section id="development" class="development">
+        <div class="container">
+            <h2 class="section-title">Development Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Doubt clarifying Platform</h3>
+                        <p>A platform for students to access study materials and clarify their doubts and get answers from peers built using tailwind css, html, javascript and firebase.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">html</span>
+                            <span class="tech-tag">tailwind css</span>
+                            <span class="tech-tag">firebase</span>
+                        </div>
+                        <div class="project-links">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Mobile App</h3>
+                        <p>A cross-platform mobile application for task management with offline capabilities and cloud sync.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">android</span>
+                            <span class="tech-tag">webview</span>
+                            <span class="tech-tag">task management</span>
+                        </div>
+                        <div class="project-links">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Websites</h3>
+                        <p>I've created numerous responsive static and dynamic websites for my clients and myself.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">responsive</span>
+                            <span class="tech-tag">DOM manipulation</span>
+                            <span class="tech-tag">dynamic</span>
+                        </div>
+                        <div class="project-links">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filmmaking Section -->
+    <section id="filmmaking" class="filmmaking">
+        <div class="container">
+            <h2 class="section-title">Filmmaking & Video Production</h2>
+            <div class="video-grid">
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <i class="fas fa-play-circle"></i>
+                    </div>
+                    <div class="video-info">
+                        <h3>Documentary</h3>
+                        <p>I can direct and edit documentaries complete with interviews and narration.</p>
+                        <div class="video-details">
+                            <span class="detail">Duration: 15 min</span>
+                            <span class="detail">Genre: Documentary</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <i class="fas fa-play-circle"></i>
+                    </div>
+                    <div class="video-info">
+                        <h3>Corporate Brand Video</h3>
+                        <p>Brand storytelling video showcasing company culture and values for a tech startup.</p>
+                        <div class="video-details">
+                            <span class="detail">Duration: 3 min</span>
+                            <span class="detail">Genre: Commercial</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <i class="fas fa-play-circle"></i>
+                    </div>
+                    <div class="video-info">
+                        <h3>Short Film</h3>
+                        <p>I can write, direct, and edit short films based on any theme including but not limited to drama, comedy, romance, etc.</p>
+                        <div class="video-details">
+                            <span class="detail">Duration: 15 min</span>
+                            <span class="detail">Genre: Drama</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Work Together</h3>
+                    <p>I'm always interested in new opportunities and collaborations. Whether you need a speaker for your event, a developer for your project, or a filmmaker for your story, I'd love to hear from you.</p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <span>himamshus06@gmail.com</span>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 7259680026</span>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Mangalore, Karnataka, India</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <select id="service" name="service" required>
+                            <option value="">Select Service</option>
+                            <option value="speaking">Speaking Engagement</option>
+                            <option value="development">Development Project</option>
+                            <option value="filmmaking">Video Production</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Portfolio</h3>
+                    <p>Speaker • Developer • Filmmaker</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#speaking">Speaking</a></li>
+                        <li><a href="#development">Development</a></li>
+                        <li><a href="#filmmaking">Filmmaking</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Himamshu S. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
-</html>
+</html> 
